@@ -1,5 +1,25 @@
+Sources
+
 Ross' slides.
 VizPrinciples slides
 Sandrine's lecture notes
+Munzner
+Ware
+http://paldhous.github.io/ucb/2016/dataviz/week2.html
+
+Gelman et al. (2002). Lets Practice What We Preach: Turning Tables into Graphs. http://www.stat.columbia. edu/~gelman/research/published/dodhia.pdf.
 
 
+
+log scale, log-log scale
+    Gelman:  citations e.g. fig 2 dodhia
+aspect ratio  - k nearest neighbors.
+banking
+
+
+
+
+Sandrine from Cleveland & McGill.
+
+• Possible graphical attributes are: Angles, areas, lengths, position on common aligned/unaligned scale, slopes, color properties.
+• Effective graphs are those for which attributes are most easily decoded.

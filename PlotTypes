@@ -1,0 +1,57 @@
+
+rug plot
+pie chart
+donut chart
+histogram
+density
+boxplot
+violin plot
+barchart
+stacked barchart
+dotchart
+QQ-plot
+
+
+# overplotting, 
+jittering
+smooth scatter plot/hexbin
+
+3-d
+surface plot
+contour plot
+parallel coordinates plot
+time series
+
+heatmap
+
+mosaic
+
+wind/rose chart circular/cyclical
+
+waterfall chart
+stacked area charts
+treemap
+
+networks
+
+
+panels, faceting
+insets
+
+
+animation
+interactive
+linked
+
+
+
+
+circles to encode an attribute
+  hard to decipher well
+
+If this is less important, then fine.
+
+Pick the attribute that is most interpretable for the most important variable
+so as to get the information across.
+
+
