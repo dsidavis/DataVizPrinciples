@@ -1,3 +1,9 @@
+https://stats.stackexchange.com/questions/78844/a-gallery-of-charts-diagrams-and-plot-types
+
+https://developers.google.com/chart/interactive/docs/gallery?csw=1
+
+
+
 
 rug plot
 pie chart
@@ -8,6 +14,7 @@ boxplot
 violin plot
 barchart
 stacked barchart
+paired bar chart
 dotchart
 QQ-plot
 
@@ -33,7 +40,22 @@ stacked area charts
 treemap
 
 networks
+  - matrix
 
+sankey plots - flow from one set of elements to another set of elements.
+
+maps
+
+calendar plot (measles heatmap example)
+
+gauge chart
+organization chart
+tree
+dendogram
+candlestick chart
+
+
+Gantt chart - project flow management.
 
 panels, faceting
 insets
@@ -44,6 +66,8 @@ interactive
 linked
 
 
+
+grid lines - annotation
 
 
 circles to encode an attribute

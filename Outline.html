@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Data Visualizatoin</title>
+    <title>Data Visualization</title>
     <meta charset="utf-8">
     <style>
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -50,6 +50,7 @@ layout: true
 + "Case studies"
   + Learn by construction & doing.
 
+
 ---
 
 # Purposes of Data Visualization
@@ -62,10 +63,17 @@ layout: true
   + summarize the data
   + identify patterns
 + Communicate with collaborators
++ Diagnostics - CDA - Confirmatory Data Analysis
+  + model fit
+  + residuals
 + Publication
 + Dashboards
 + Debugging code
   + e.g. when reading complex data
+
+
++ We'll assume that we want to faithfully convey the data
+   + i.e. not trying to lie/cheat/fake plots.
 
 ---
 # Different Purposes
@@ -76,12 +84,103 @@ layout: true
 
 --
 
+# Medium
+
++ 
 + Static
 + Dynamic, Interactive plots
   + brushing
   + linked plots
 + Dashboards/Apps
 
++ Projector, paper, screen, ...
++ Resolution
+
+
+---
+# Visualization Requires Effort
+
++ It is (too) easy to create plots with modern software
+   + `plot(x, y)` gives you something
++ But you should be thinking  what *plot* would
+present your *message* to your *audience* most *effectively*?
+
++ In many cases, the type of plo really is obvious
+  + e.g. a scatterplot
++ But what about
+   + additional variables via color, glyph
+   + text annotations
+   + confidence intervals
+   + panel plots
+   + different scales on the axes
+   + a caption
+
++ Do you know what the message is from your plot?
+  + Can you recognize how others might focus on a different message
+
+  + What do people focus on?
+  + How can you help them focus on what you want them to see.
+
+
+
+---
+<!-- Move -->
++  Gratuitous use of colors can lead the viewer to try to interpret them.
+   <!--   Age Structure of College Enrolment (1972-1976) in Ross's slides Lec 3 -->
+
+
+
+---
+# What's the goal
+
++ allow the viewer to look up value for individual observation/group
++ compare at higher-level, lower-resolution.
+
++ Tables versus plots
+
+
+---
+
+# Visual Perception
+
++ encoding information through attributes
+  + length, color, glyph, ...
++ Stevens
++ Cleveland & McGill
++ paldhous.github.io and comparison of the 3 chart types for the same data.
+
+---
+# Pie Chart
+
++ When are they best?
++ When are they okay?
+
+
+
+
++  tend to underestimate acute angles and overestimate obtuse ones
+     connect to  Poggendorff illusion
++ angle judgements depend on orientations. Angles whose bisectors are horizontal tend to be seen as larger than whose bisectors are vertical 
+<!-- Ross - chapter 5   -->
+
+---
+# Wordclouds
+
++ Frequency represented by font size.
++􏱁 Neither area nor height corresponds to frequency of words.
++􏱁 How do longer words compare with shorter words?
++􏱁 How are capital letters handled?
++􏱁 How to calculate relative difference in frequency between
+two words?
++􏱁 How are the words ordered within the cloud (alphabetical,
+frequency)?
+
+---
+
+# Drawing Good Graphs
+<!-- Ross lect 3 last page. -->
+• If the “story” is simple, keep it simple.
+• If the “story” is complex, make it look simple. • Tell the truth – don’t distort the data.
 
 ---
 # Essential Elements
@@ -98,6 +197,54 @@ layout: true
   + Say what the reader should focus on and provide the
     textual summary/message.
   + Not all viewers will have the same interpretation as you.
++ Self-contained details for interpretation.
+  + Or connect to other explanatory material.
+
++ Adherence to perception principles
+
++ Iterate and edit.
+
++ When you subset data to "zoom in" on a plot,
+  the same plot or composition is not necessarily appropriate.
+<!-- example  log scale -->
+
+
+
+---
+# Color
+
++ Decpmposition HSV
++ blindness
++ Cindy Brewer
+
++ “get it right in black and white”.
+  + E.g. Use luminance for grayscale version
+
+---
+# EDA
++ Purpose?
++ Viewer:
+   + you by yourself
+   + with your collaborators
+
+---
+# Single Variable (Univariate)
+
++ Consider rentals in the East Bay (Berkeley, Oakland)
+
+
+
++ How to summarize/"understand" price of rental units
+
+
+???
+
++ Ideally, they say mean
+  + What about the spread?  SD, IQR
+  + Doesn't the use of the mean assume not skewed?
+  + Need more than simple summaries
+  + Need to look at the distribution of all the values
+     + Plot them all on the number line
 
 
 
@@ -107,8 +254,31 @@ layout: true
 
 + "Simple" least squares problem
 + 3 parameters
++ Try different starting values and the optimization doesn't move
+  from some of these
+  + What's the problem?
+  + How to go about understanding the issue?
+
+<!--
+     Create a grid for different combinations of the 3 parameters
+     and evaluate the SSE at each combination of parameters. 
+     Say 100 values for each parameter, so 100^3 combinations
+     Now we have 4 variables.
+     How to see SEE as the three parameters vary?
+   -->
 
 
+
+
+---
+
+# Marey plot
+
++ Train schedule
++ Introduction of the TGV in France (Train a Grande Vitesse)
+<!--
+   https://i.stack.imgur.com/qJ1hH
+   -->
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
