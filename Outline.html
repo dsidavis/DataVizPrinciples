@@ -39,73 +39,82 @@ layout: true
 
 ---
 
-# Goal
+# Goals
 
-+ Think about plots and how to visualize
-+ Don't just make them.
-+ Consider what plots to make & Why
-+ Evaluate and compare different compositions.
++ Describe the roles of graphics for research.
++ Contrast the features and utility of different plot types.
++ Identify what plots to make (and why) for a given question and dataset.
++ Effectively use graphical elements (color, annotations, aesthetics, line types, etc.) to improve plots.
++ Implement best practices to maximize the impact of graphical displays.
 
+## Take home
 
-+ "Case studies"
-  + Learn by construction & doing.
-
-
++ Don't just make plots.
++ Think about your purpose, message, audience and medium *before* and *during* the process.
++ Faithfully represent your data.
+  
+## "Case studies"
+  + Evaluate and compare different compositions
+  + Learn by doing, and re-doing ...
+ 
 ---
-
 # Purposes of Data Visualization
-## Where in the Data Pipeline?
+## When to viz in the research data pipeline
 
-+ Clean data
++ Cleaning data
   + errors in the data
   + outliers
-+ EDA - Exploratory Data Analysis
++ Exploratory Data Analysis (EDA)
   + summarize the data
   + identify patterns
-+ Communicate with collaborators
-+ Diagnostics - CDA - Confirmatory Data Analysis
++ Confirmatory Data Analysis (CDA)
   + model fit
   + residuals
-+ Publication
-+ Dashboards
++ Communicating findings:
+  + collaborators (internal reports)
+  + colleagues (publications)
+  + public (outreach)
+
 + Debugging code
   + e.g. when reading complex data
 
-
-+ We'll assume that we want to faithfully convey the data
-   + i.e. not trying to lie/cheat/fake plots.
-
 ---
-# Different Purposes
+# Purposes of Data Visualization
+## Before you start
 
-+ Different mindsets and purposes for plots at these different stages
-+ Different viewers/audiences
-+ Need to conciously and intentionally identify viewer and the message for the plot
-
+  *Who* is your audience?
+  *What* is your goal? The intended message?
+  *Where* and how will it be presented?
+  *Why* do you need a viz?
+  
 --
 
-# Medium
+# Purposes of Data Visualization 
+## Know your medium
 
-+ 
-+ Static
-+ Dynamic, Interactive plots
-  + brushing
-  + linked plots
-+ Dashboards/Apps
+# How
+  + Projector, paper, screen, ...
 
-+ Projector, paper, screen, ...
-+ Resolution
+# What
+  + Static
+  + Dynamic, interactive plots
+    + brushing
+    + linked plots
+  + Dashboards/Apps
 
+# Constraints
+  + Resolution, color, ...
 
 ---
 # Visualization Requires Effort
 
-+ It is (too) easy to create plots with modern software
-   + `plot(x, y)` gives you something
-+ But you should be thinking  what *plot* would
-present your *message* to your *audience* most *effectively*?
++ "a picture is worth a 1000 words"
+  + 'plot(x, y)'
+  + good software makes it (too) easy
 
-+ In many cases, the type of plo really is obvious
++ What *plot* presents your *message* to your *audience* most *effectively*?
+
++ In many cases, the type of plot really is obvious
   + e.g. a scatterplot
 + But what about
    + additional variables via color, glyph
@@ -115,13 +124,12 @@ present your *message* to your *audience* most *effectively*?
    + different scales on the axes
    + a caption
 
-+ Do you know what the message is from your plot?
-  + Can you recognize how others might focus on a different message
-
-  + What do people focus on?
-  + How can you help them focus on what you want them to see.
-
-
++ Help yourself and your audience
+  + Does the plot faithfully articulate your data *and* your message?
+  + Could others focus on a different message? 
+    + What's the risk of mis-interpretation?
+    + Is there a better way to help them pay attention to what you want them to see?
+    + Are there any implicit biases at play?
 
 ---
 <!-- Move -->
